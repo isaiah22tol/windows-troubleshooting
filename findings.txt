@@ -1,0 +1,50 @@
+Windows Troubleshooting Project
+
+Check: Windows System File Verification
+Tool: System File Checker (SFC)
+Command: sfc /verifyonly
+Result: Integrity violations were reported.
+Status: Further investigation needed.
+Repair Follow-up
+
+- DISM RestoreHealth: Completed successfully.
+- SFC initial verification: Reported integrity violations.
+- SFC follow-up scan: No integrity violations found.
+- Outcome: Windows system file check now passes after repair and restart.
+Windows Event Log Findings
+
+1. Event ID 1796 — Microsoft-Windows-TPM-WMI
+   Finding: Secure Boot SBAT update failed with error 0x800700c1.
+   Status: Requires further investigation.
+
+2. Event ID 7000 — Service Control Manager
+   Finding: Steam Client Service failed to start within the expected time.
+   Status: Check whether Steam functions normally.
+
+3. Event ID 7009 — Service Control Manager
+   Finding: A service startup timed out.
+   Status: The exact service needs to be identified.
+Follow-up Check
+
+- Steam Client Service: Steam opens and works normally.
+- Assessment: Events 7000 and 7009 indicate a service startup timeout, but no current Steam functionality problem was reported.
+- Action: No changes made because Steam is working normally.
+Reliability Monitor Finding
+
+- Event: Windows was not shut down properly.
+- Date and time: October 19, 2026, at 8:51:17 PM.
+- Assessment: Windows recorded an unexpected shutdown.
+- Cause: Unknown; the event details alone do not establish the cause.
+- Next action: Monitor for repeat occurrences.
+Additional Reliability Monitor Finding
+
+- Event: Windows was not shut down properly.
+- Date and time: September 23, 2026, at 8:01:41 PM.
+- Assessment: This is a second recorded unexpected shutdown.
+- Conclusion: Two incidents were found on separate dates. The cause remains unknown.
+Windows Startup Information
+
+- Tool: PowerShell / CIM
+- Command: Get-CimInstance Win32_OperatingSystem
+- Last boot time: October 22, 2026, at 4:32:27 PM.
+- Assessment: Windows startup information was retrieved successfully.
