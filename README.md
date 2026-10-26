@@ -35,6 +35,12 @@ A beginner-level Windows troubleshooting project using built-in Windows diagnost
 - Two unexpected shutdown records were found, dated September 23 and October 19, 2026.
 - A Secure Boot SBAT update failure was recorded; its cause has not been determined.
 
+## Evidence and Findings
+
+- [View Troubleshooting Findings](findings.txt)
+
+The findings document includes system file verification results, DISM repair follow-up, Windows event log observations, unexpected shutdown records, and system startup information.
+
 ## Limitations
 Event records provide clues, but they do not establish the root cause of every issue. No unsupported conclusions were made.
 
