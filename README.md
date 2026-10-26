@@ -46,3 +46,13 @@ Event records provide clues, but they do not establish the root cause of every i
 
 ## Scope
 This project used built-in diagnostic tools on my own Windows PC. Findings describe observations made during the assessment.
+
+
+## Lessons Learned
+
+- How to use SFC and DISM to check and repair Windows system files.
+- How to review Windows Event Viewer logs for troubleshooting clues.
+- How to use Reliability Monitor to identify unexpected shutdown events.
+- How to retrieve system startup information using PowerShell and CIM.
+- Why troubleshooting findings should be documented without assuming an unverified root cause.
+- How to organize technical evidence and documentation in a GitHub repository.
